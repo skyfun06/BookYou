@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*:where(
+	:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+) {
+	all: unset;
+	display: revert;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	touch-action: manipulation;
+	user-select: none;
+}
+
+a,button {
+	cursor: pointer;
+}

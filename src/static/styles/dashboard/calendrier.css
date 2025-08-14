@@ -1,0 +1,110 @@
+#app > h1 {
+    color: #020817;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#app > p {
+    color: #64748b;
+    padding: 15px 0;
+}
+
+#app > div {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.planning {
+    width: 55%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: #fff;
+
+    border: 1px solid #dbe3ed;
+    border-radius: 12px;
+
+    padding: 22px 16px;
+}
+
+.rdv-today {
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: #fff;
+
+    border: 1px solid #dbe3ed;
+    border-radius: 12px;
+
+    padding: 22px 16px;
+}
+
+.planning > div:first-child {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.planning > div:first-child > h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.planning > div:first-child > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.aujourdhui {
+    color: #0f172a;
+    font-size: 14px;
+
+    background-color: #f4f5f7;
+
+    padding: 10px 8px;
+
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
+}
+
+.aujourdhui:hover {
+    background-color: #e5ebf3;
+}
+
+.new-rdv {
+    color: #fff;
+    font-size: 14px;
+
+    background-color: #2463eb;
+
+    padding: 10px 22px;
+
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
+}
+
+.calender {
+    display: flex;
+    
+}
