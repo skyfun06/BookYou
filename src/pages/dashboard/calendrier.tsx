@@ -10,12 +10,12 @@ export default {
 		"/styles/dashboard/calendrier.css",
 	],
 	scripts: [
-        "/scripts/dashboard/calendrier.ts"
-    ],
+		"/scripts/dashboard/calendrier.ts",
+	],
 
-	head: <>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xxxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </>,
+	head: (
+		<></>
+	),
 	body: (
 		<>
 			<h1>Calendrier</h1>
@@ -26,31 +26,56 @@ export default {
 						<h2>Planning mensuel</h2>
 						<div>
 							<button type="button" class="aujourdhui">Aujourd'hui</button>
-							<button type="button" class="new-rdv">+  Nouveau RDV</button>
+							<button type="button" class="new-rdv">+ Nouveau RDV</button>
 						</div>
 					</div>
 					<div class="calender">
-                        <div class="select-years">
-                            <button type="button" id="prevBtn">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <div class="monthYear" id="monthYear"></div>
-                            <button type="button" id="nextBtn">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-                        <div class="days">
-                            <div class="day">Mon</div>
-                            <div class="day">Tue</div>
-                            <div class="day">Wed</div>
-                            <div class="day">Thu</div>
-                            <div class="day">Fri</div>
-                            <div class="day">Sat</div>
-                            <div class="day">Sun</div>
-                        </div>
-                        <div class="dates" id="dates">
-
-                        </div>
+						<div class="select-years">
+							<button type="button" id="prevBtn">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide lucide-chevron-left-icon lucide-chevron-left"
+								>
+									<path d="m15 18-6-6 6-6" />
+								</svg>
+							</button>
+							<div class="monthYear" id="monthYear"></div>
+							<button type="button" id="nextBtn">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide lucide-chevron-right-icon lucide-chevron-right"
+								>
+									<path d="m9 18 6-6-6-6" />
+								</svg>
+							</button>
+						</div>
+						<div class="days">
+							<div class="day">Mon</div>
+							<div class="day">Tue</div>
+							<div class="day">Wed</div>
+							<div class="day">Thu</div>
+							<div class="day">Fri</div>
+							<div class="day">Sat</div>
+							<div class="day">Sun</div>
+						</div>
+						<div class="dates" id="dates">
+						</div>
 					</div>
 					<span>●</span>jour avec RDV
 				</div>
@@ -174,9 +199,9 @@ export default {
 										marie.dubois@email.com
 									</p>
 								</div>
-							</div>  
+							</div>
 						</div>
-                        <div class="rdv">
+						<div class="rdv">
 							<div>
 								<div>
 									<svg
