@@ -10,14 +10,14 @@
 .top > h1 {
     color: #020817;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .top > p {
     color: #64748b;
 }
 
-#app > div:nth-child(2) {
+.statistiques {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,7 +27,7 @@
     gap: 15px;
 }
 
-#app > div:nth-child(2) > div {
+.statistiques > div {
     width: 100%;
     max-width: 550px;
 
@@ -46,11 +46,11 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-#app > div:nth-child(2) > div:hover {
+.statistiques > div:hover {
     box-shadow: rgba(111, 100, 100, 0.2) 0px 7px 29px 0px;
 }
 
-#app > div:nth-child(2) > div > div {
+.statistiques > div > div {
     width: 100%;
     
     display: flex;
@@ -59,26 +59,26 @@
     align-items: center;
 }
 
-#app > div:nth-child(2) > div > div:first-child > p{
+.statistiques > div > div:first-child > p{
     color: #64748b;
     font-size: 14px;
 }
 
-#app > div:nth-child(2) > div > div:first-child > svg {
+.statistiques > div > div:first-child > svg {
     color: #64748b;
 }
 
-#app > div:nth-child(2) > div > div:nth-child(2) {
+.statistiques > div > div:nth-child(2) {
     color: #020817;
     font-size: 24px;
     font-weight: 600;
 }
 
-#app > div:nth-child(2) > div > div:last-child > p:first-child {
+.statistiques > div > div:last-child > p:first-child {
     color: #64748b;
     font-size: 12px;
 }
-#app > div:nth-child(2) > div > div:last-child > p:last-child {
+.statistiques > div > div:last-child > p:last-child {
     color: #16a34a;
     font-size: 12px;
 }

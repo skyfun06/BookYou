@@ -45,8 +45,8 @@ export default {
 							</svg>
 						</button>
 					</div>
-					<nav class="menu">
-						<a href="#" class="select">
+					<nav class="menu" id="menu">
+						<a href="/dashboard" class="select">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="20"
@@ -65,7 +65,7 @@ export default {
 							</svg>
 							Tableau de bord
 						</a>
-						<a href="#">
+						<a href="/dashboard/calendrier">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="20"
@@ -84,7 +84,7 @@ export default {
 							</svg>
 							Calendrier
 						</a>
-						<a href="#">
+						<a href="/dashboard/clients">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="20"
@@ -103,7 +103,7 @@ export default {
 							</svg>
 							Clients
 						</a>
-						<a href="#">
+						<a href="/dashboard/prestations">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="20"

@@ -18,7 +18,7 @@ export default {
 				<h1>Tableau de bord</h1>
 				<p>Aperçu de votre activité</p>
 			</div>
-			<div>
+			<div class="statistiques">
 				<div>
 					<div>
 						<p>RDV Aujourd'hui</p>
@@ -49,7 +49,7 @@ export default {
 				</div>
 				<div>
 					<div>
-						<p>RDV Aujourd'hui</p>
+						<p>RDV cette semaine</p>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="16"
@@ -60,24 +60,25 @@ export default {
 							stroke-width="2"
 							stroke-linecap="round"
 							stroke-linejoin="round"
+							class="lucide lucide-users-icon lucide-users"
 						>
-							<path d="M8 2v4" />
-							<path d="M16 2v4" />
-							<rect width="18" height="18" x="3" y="4" rx="2" />
-							<path d="M3 10h18" />
+							<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+							<path d="M16 3.128a4 4 0 0 1 0 7.744" />
+							<path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+							<circle cx="9" cy="7" r="4" />
 						</svg>
 					</div>
 					<div>
-						8
+						42
 					</div>
 					<div>
-						<p>2 en attente</p>
-						<p>+2 vs hier</p>
+						<p>6 restants</p>
+						<p>+12% vs sem. dernière</p>
 					</div>
 				</div>
 				<div>
 					<div>
-						<p>RDV Aujourd'hui</p>
+						<p>Taux de remplissage</p>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="16"
@@ -88,24 +89,23 @@ export default {
 							stroke-width="2"
 							stroke-linecap="round"
 							stroke-linejoin="round"
+							class="lucide lucide-trending-up-icon lucide-trending-up"
 						>
-							<path d="M8 2v4" />
-							<path d="M16 2v4" />
-							<rect width="18" height="18" x="3" y="4" rx="2" />
-							<path d="M3 10h18" />
+							<path d="M16 7h6v6" />
+							<path d="m22 7-8.5 8.5-5-5L2 17" />
 						</svg>
 					</div>
 					<div>
-						8
+						87%
 					</div>
 					<div>
-						<p>2 en attente</p>
-						<p>+2 vs hier</p>
+						<p>Cette semaine</p>
+						<p>+5% vs sem. dernière</p>
 					</div>
 				</div>
 				<div>
 					<div>
-						<p>RDV Aujourd'hui</p>
+						<p>Annulations</p>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="16"
@@ -116,19 +116,19 @@ export default {
 							stroke-width="2"
 							stroke-linecap="round"
 							stroke-linejoin="round"
+							class="lucide lucide-circle-plus-icon lucide-circle-plus"
 						>
-							<path d="M8 2v4" />
-							<path d="M16 2v4" />
-							<rect width="18" height="18" x="3" y="4" rx="2" />
-							<path d="M3 10h18" />
+							<circle cx="12" cy="12" r="10" />
+							<path d="M8 12h8" />
+							<path d="M12 8v8" />
 						</svg>
 					</div>
 					<div>
-						8
+						3
 					</div>
 					<div>
-						<p>2 en attente</p>
-						<p>+2 vs hier</p>
+						<p>Cette semaine</p>
+						<p>-2 vs sem. dernière</p>
 					</div>
 				</div>
 			</div>

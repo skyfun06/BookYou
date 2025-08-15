@@ -3,16 +3,16 @@ const datesElement = document.getElementById("dates")!;
 const prevBtn = document.getElementById("prevBtn")!;
 const nextBtn = document.getElementById("nextBtn")!;
 
-let currentDate = new Date();
+const currentDate = new Date();
 
 const updateCalender = () => {
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
 
-    const firstDay = new Date(currentYear, currentMonth,0);
+    const firstDay = new Date(currentYear, currentMonth, 1);
     const lastDay = new Date(currentYear, currentMonth + 1, 0);
     const totalDays = lastDay.getDate();
-    const firstDayIndex = firstDay.getDate();
+    const firstDayIndex = firstDay.getDay();
     const lastDaytIndex = lastDay.getDate();
 
     const monthYearString = currentDate.toLocaleString
@@ -21,8 +21,8 @@ const updateCalender = () => {
 
     let datesHTML = '';
 
-    for(let i = firstDayIndex; i > 0; i--) {
-        const prevDate = new Date(currentYear, currentMonth, 0 - i +1);
+    for (let i = firstDayIndex; i > 0; i--) {
+        const prevDate = new Date(currentYear, currentMonth, -i + 1);
         datesHTML += `<div class="date inactive">${prevDate.getDate()}</div>`;
     }
 

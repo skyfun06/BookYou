@@ -13,9 +13,7 @@ export default {
 		"/scripts/dashboard/calendrier.ts",
 	],
 
-	head: (
-		<></>
-	),
+	head: <></>,
 	body: (
 		<>
 			<h1>Calendrier</h1>
@@ -77,7 +75,19 @@ export default {
 						<div class="dates" id="dates">
 						</div>
 					</div>
-					<span>●</span>jour avec RDV
+					<div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="12"
+							height="12"
+							fill="currentColor"
+							class="bi bi-circle-fill"
+							viewBox="0 0 16 16"
+						>
+							<circle cx="8" cy="8" r="8" />
+						</svg>
+						<p>jour avec RDV</p>
+					</div>
 				</div>
 				<div class="rdv-today">
 					<div>
@@ -102,13 +112,13 @@ export default {
 						<p>lundi 1 septembre • 5 RDV</p>
 					</div>
 					<div>
-						<div class="rdv">
+						<div class="reservation">
 							<div>
 								<div>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
-										width="24"
-										height="24"
+										width="16"
+										height="16"
 										viewBox="0 0 24 24"
 										fill="none"
 										stroke="currentColor"
@@ -126,8 +136,8 @@ export default {
 									<p>Confirmé</p>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
-										width="24"
-										height="24"
+										width="16"
+										height="16"
 										viewBox="0 0 24 24"
 										fill="none"
 										stroke="currentColor"
@@ -146,8 +156,8 @@ export default {
 								<div>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
-										width="24"
-										height="24"
+										width="16"
+										height="16"
 										viewBox="0 0 24 24"
 										fill="none"
 										stroke="currentColor"
@@ -166,8 +176,8 @@ export default {
 									<p>
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
-											width="24"
-											height="24"
+											width="12"
+											height="12"
 											viewBox="0 0 24 24"
 											fill="none"
 											stroke="currentColor"
@@ -183,8 +193,8 @@ export default {
 									<p>
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
-											width="24"
-											height="24"
+											width="12"
+											height="12"
 											viewBox="0 0 24 24"
 											fill="none"
 											stroke="currentColor"
@@ -201,13 +211,13 @@ export default {
 								</div>
 							</div>
 						</div>
-						<div class="rdv">
+						<div class="reservation">
 							<div>
 								<div>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
-										width="24"
-										height="24"
+										width="16"
+										height="16"
 										viewBox="0 0 24 24"
 										fill="none"
 										stroke="currentColor"
@@ -222,11 +232,11 @@ export default {
 									09:00 (1h)
 								</div>
 								<div>
-									<p>Confirmé</p>
+									<p class="waiting">En attente</p>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
-										width="24"
-										height="24"
+										width="16"
+										height="16"
 										viewBox="0 0 24 24"
 										fill="none"
 										stroke="currentColor"
@@ -245,8 +255,8 @@ export default {
 								<div>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
-										width="24"
-										height="24"
+										width="16"
+										height="16"
 										viewBox="0 0 24 24"
 										fill="none"
 										stroke="currentColor"
@@ -265,8 +275,8 @@ export default {
 									<p>
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
-											width="24"
-											height="24"
+											width="12"
+											height="12"
 											viewBox="0 0 24 24"
 											fill="none"
 											stroke="currentColor"
@@ -282,8 +292,107 @@ export default {
 									<p>
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
-											width="24"
-											height="24"
+											width="12"
+											height="12"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-mail-icon lucide-mail"
+										>
+											<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+											<rect x="2" y="4" width="20" height="16" rx="2" />
+										</svg>
+										marie.dubois@email.com
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="reservation">
+							<div>
+								<div>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-clock-icon lucide-clock"
+									>
+										<path d="M12 6v6l4 2" />
+										<circle cx="12" cy="12" r="10" />
+									</svg>
+									09:00 (1h)
+								</div>
+								<div>
+									<p>Confirmé</p>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-ellipsis-vertical-icon lucide-ellipsis-vertical"
+									>
+										<circle cx="12" cy="12" r="1" />
+										<circle cx="12" cy="5" r="1" />
+										<circle cx="12" cy="19" r="1" />
+									</svg>
+								</div>
+							</div>
+							<div>
+								<div>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-user-icon lucide-user"
+									>
+										<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+										<circle cx="12" cy="7" r="4" />
+									</svg>
+									<p>Marie Dubois</p>
+								</div>
+								<p>Coupe + Brushing</p>
+								<div>
+									<p>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="12"
+											height="12"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-phone-icon lucide-phone"
+										>
+											<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+										</svg>
+										06 12 34 56 78
+									</p>
+									<p>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="12"
+											height="12"
 											viewBox="0 0 24 24"
 											fill="none"
 											stroke="currentColor"
