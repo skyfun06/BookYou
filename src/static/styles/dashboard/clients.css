@@ -155,6 +155,12 @@
     padding: 18px 15px;
 
     border-top: 1px solid #d2d3d5;
+
+    transition: all 0.3s ease;
+}
+
+.client:hover {
+    background-color: #faf6f6;
 }
 
 .client > div:first-child {
