@@ -1,3 +1,7 @@
+#app {
+    overflow-y: hidden;
+}
+
 .top {
     display: flex;
     flex-direction: column;

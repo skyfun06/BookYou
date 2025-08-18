@@ -540,7 +540,7 @@ export default {
 			<div id="modal" class="hidden">
 				<div>
 					<h2>Nouvelle Prestation</h2>
-					<button type="button" class="closeBtn">
+					<button type="button" class="closeBtn" >
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="16"
