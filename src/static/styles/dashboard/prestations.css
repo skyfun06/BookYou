@@ -1,3 +1,8 @@
+#root {
+    height: 100%;
+    min-height: 100vh;
+}
+
 .top {
     display: flex;
     flex-direction: column;
@@ -373,4 +378,24 @@
 
     border: 1px solid #d2d3d5;
     border-radius: 12px;
+}
+
+@media (max-width: 1100px) {
+
+    #app > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #app > div:last-child {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .statistiques > div {
+        height: 180px;
+    }
 }

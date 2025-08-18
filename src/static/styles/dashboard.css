@@ -44,12 +44,15 @@ html, body {
 
 .dashboard {
 	display: flex;
-	height: 100vh;
-	width: 100vw;
+	min-height: 100dvh;
+	height: auto;      
+	width: 100%; 
 }
 
 .sidebar {
-	width: 256px;
+	min-height: 100dvh;
+  	height: auto; 
+	min-width: 256px;
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;

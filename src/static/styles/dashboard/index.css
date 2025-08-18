@@ -1,3 +1,8 @@
+#app {
+    min-height: 100dvh;
+    height: auto;
+}
+
 .top {
     display: flex;
     flex-direction: column;
@@ -38,6 +43,8 @@
 
     border: 1px solid #d2d3d5;
     border-radius: 8px;
+
+    background-color: #fff;
 
     padding: 24px;
     gap: 15px;
@@ -119,6 +126,10 @@
     font-weight: 600;
 
     gap: 10px;
+}
+
+#book-today {
+    background-color: #fff;
 }
 
 #book-today > div:last-child {
@@ -227,6 +238,10 @@
     background-color: #fef9c3 !important;
 }
 
+#last-activity {
+    background-color: #fff;
+}
+
 #last-activity > div:nth-child(2) {
     width: 100%;
 
@@ -309,14 +324,36 @@
     font-size: 12px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
+    #app {
+        min-height: auto;
+    }
 
-    #app > div:nth-child(2) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .statistiques {
+        width: 100%;
+    }
+
+    .statistiques > div {
+        height: 155px;
+        width: 100% ;
+    }
+}
+
+@media (max-width: 1100px) {
+     #app > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     #app > div:last-child {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .statistiques > div {
+        height: 180px;
     }
 }

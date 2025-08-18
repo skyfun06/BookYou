@@ -1,3 +1,8 @@
+#app {
+    min-height: 100dvh;
+    height: auto;
+}
+
 .top {
     display: flex;
     flex-direction: column;
@@ -38,6 +43,8 @@
 
     border: 1px solid #d2d3d5;
     border-radius: 8px;
+
+    background-color: #fff;
 
     padding: 24px;
     gap: 15px;
@@ -80,7 +87,8 @@
 }
 
 .clients-list {
-    width: 100%;
+    min-width: 100%;
+    width: auto;
 
     display: flex;
     flex-direction: column;
@@ -250,4 +258,33 @@
 .nouveau {
     color: #166534;
     background-color: #dcfce7;
+}
+
+@media (max-width: 1920px) {
+    .statistiques {
+        justify-content: flex-start;
+        gap: 32px;
+    }
+
+    .statistiques > div {
+        width: 375px;
+    }
+}
+ 
+@media (max-width: 1100px) {
+
+    #app > div:nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #app > div:last-child {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .statistiques > div {
+        height: 180px;
+    }
 }
