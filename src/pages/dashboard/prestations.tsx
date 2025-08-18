@@ -9,7 +9,9 @@ export default {
 	styles: [
 		"/styles/dashboard/prestations.css",
 	],
-	scripts: [],
+	scripts: [
+		"/scripts/dashboard/prestation.ts"
+	],
 
 	head: <></>,
 	body: (
@@ -148,7 +150,7 @@ export default {
 							</svg>
 							<input type="search" placeholder="Rechercher une préstation..." />
 						</div>
-						<button type="button" class="new-prestation">
+						<button type="button" class="new-prestation" id="openModalBtn">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
@@ -535,7 +537,7 @@ export default {
 					</div>
 				</div>
 			</div>
-			<div class="modal" id="modal">
+			<div id="modal" class="hidden">
 				<div>
 					<h2>Nouvelle Prestation</h2>
 					<button type="button" class="closeBtn">
@@ -556,7 +558,7 @@ export default {
 						</svg>
 					</button>
 				</div>
-                <form>
+                <form id="prestationForm">
                     <div>
                         <label>Nom de la prestation</label>
                         <input type="text" placeholder="Ex: Coupe Homme..." name="prestation-name" id="prestation-name" />
@@ -568,11 +570,11 @@ export default {
                     <div>   
                         <div>
                             <label>Durée (min)</label>
-                            <input type="number" name="prestation-duree" id="prestation-duree" />
+                            <input type="number" name="prestation-duree" id="prestation-duree" placeholder="30" />
                         </div>
                         <div>
                             <label>Prix (€)</label>
-                            <input type="number" name="prestation-prix" id="prestation-prix" />
+                            <input type="number" name="prestation-prix" id="prestation-prix" placeholder="0" />
                         </div>
                     </div>
                     <div>
@@ -580,14 +582,18 @@ export default {
                             <p>Prestation active</p>
                             <p>La prestation sera disponible à la réservation</p>
                         </div>
-                        <button type="button"></button>
+                        <div class="container" >
+							<input type="checkbox" id="check" />
+							<label for="check" class="button"></label>
+						</div>
                     </div>
                     <div>
-                        <button type="button">Annuler</button>
-                        <button type="button">Créer la préstation</button>
+                        <button type="button" id="closeModalBtn">Annuler</button>
+                        <button type="submit">Créer la préstation</button>
                     </div>
                 </form>
 			</div>
+			<div id="overlay" class="hidden"></div>
 		</>
 	),
 
